@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "componenttypes.h": "c",
+        "eventdispatcher.h": "c",
+        "raylib.h": "c",
+        "movementprototype.h": "c"
+    }
+}
