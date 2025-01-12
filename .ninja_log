@@ -1,0 +1,18 @@
+# ninja log v5
+1	209	1736712356322396147	CMakeFiles/Game.dir/src/events/listeners/inputListeners.c.o	a9ccd9216ae0ebab
+2	320	1736712356434395669	CMakeFiles/Game.dir/src/events/listeners/physicsListeners.c.o	a9285b8faae322dc
+1	401	1736712356493395417	CMakeFiles/Game.dir/src/events/eventDispatcher.c.o	269d7b5f72b81fd
+210	479	1736712356572395080	CMakeFiles/Game.dir/src/input/input.c.o	38306c4ba9900c98
+401	671	1736712356783394179	CMakeFiles/Game.dir/src/systems/collisionSystem.c.o	42259e1c01ac1397
+320	689	1736712356778394200	CMakeFiles/Game.dir/src/main.c.o	9907aba254b5cda5
+480	737	1736712356849393897	CMakeFiles/Game.dir/src/tests/testInputCommands.c.o	206ee84ec4a92327
+672	1004	1736712357108392791	CMakeFiles/Game.dir/src/tests/tests.c.o	ba881951432561c
+737	5209	1736712361293374982	lib/extern/raylib/raylib/CMakeFiles/raylib.dir/rcore.c.o	e753c4e9beddc014
+5209	6135	1736712362231370992	lib/extern/raylib/raylib/CMakeFiles/raylib.dir/rshapes.c.o	45ff14f43d95ed70
+6136	9986	1736712366060354760	lib/extern/raylib/raylib/CMakeFiles/raylib.dir/rtext.c.o	5e0954e012ba8b74
+1004	14051	1736712370128338148	lib/extern/raylib/raylib/CMakeFiles/raylib.dir/rmodels.c.o	8dfef1d77d051f82
+14051	14498	1736712370597336233	lib/extern/raylib/raylib/CMakeFiles/raylib.dir/utils.c.o	55cca580ddf5f0a0
+689	16257	1736712372353329062	lib/extern/raylib/raylib/CMakeFiles/raylib.dir/raudio.c.o	d384a38fa21174be
+9986	17346	1736712373457324553	lib/extern/raylib/raylib/CMakeFiles/raylib.dir/rtextures.c.o	eb3efdb31c91fea5
+17346	17463	1736712373534324239	lib/extern/raylib/raylib/libraylib.a	51432c73134498c8
+17463	20380	1736712376491318624	Game.html	bf10cb84a627db78
