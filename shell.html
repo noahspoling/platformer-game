@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>Game</title>
+    <style>
+      body { 
+          margin: 0;
+          background-color: #1a1a1a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          padding: 20px;
+          box-sizing: border-box;
+          overflow-x: auto;
+      }
+      .game-container {
+          width: 800px;  /* Fixed width */
+          height: 600px; /* Fixed height */
+          background-color: black;
+          position: relative;
+          box-shadow: 0 0 20px rgba(0,0,0,0.3);
+          flex-shrink: 0; /* Prevent container from shrinking */
+      }
+      canvas.emscripten { 
+          display: block; /* Prevent inline spacing issues */
+          width: 800px;
+          height: 600px;
+          image-rendering: pixelated;
+          image-rendering: crisp-edges;
+      }
+      #controls {
+          position: absolute;
+          bottom: -30px;
+          left: 50%;
+          transform: translateX(-50%);
+          color: #ffffff;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          font-size: 14px;
+          white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-container">
+        <canvas class="emscripten" id="canvas" width="800" height="600" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
+        <div id="controls">
+            Arrow Keys: Move | Space: Jump
+        </div>
+    </div>
+    <script>
+      var Module = {
+        canvas: (function() {
+          return document.getElementById('canvas');
+        })(),
+        onRuntimeInitialized: function() {
+          // Prevent default browser scaling behaviors
+          window.addEventListener('resize', function(e) {
+            e.preventDefault();
+          });
+        }
+      };
+    </script>
+    {{{ SCRIPT }}}
+  </body>
+</html>

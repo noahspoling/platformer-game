@@ -13,6 +13,10 @@
 
 int main(void)
 {
+    // Initialize window dimensions
+    int windowWidth = DEFAULT_WINDOW_WIDTH;
+    int windowHeight = DEFAULT_WINDOW_HEIGHT;
+
     // SetTraceLogLevel(LOG_WARNING); // Set the log level to only log errors
 
     Movement movement = {
@@ -21,10 +25,18 @@ int main(void)
         .acceleration = {0, 0}
     };
     TraceLog(LOG_INFO, "Address of movement: %p", (void*)&movement);
+    PhysicsEntity entity = { .movement = movement };
 
     initEventDispatcher(getEventDispatcher());
     registerInputListeners();
-    InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "raylib [core] example - basic window");
+
+    // Initialize window
+    #ifdef PLATFORM_WEB
+        InitWindow(DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT, "Game");
+        // No resize handling - we want fixed size
+    #else
+        InitWindow(DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT, "Game");
+    #endif
 
     RenderTexture2D target = LoadRenderTexture(TILEMAP_WIDTH * TILE_SIZE, TILEMAP_HEIGHT * TILE_SIZE);
 
@@ -37,7 +49,7 @@ int main(void)
 
         handlePlatformerInput(&movement); // Handle the input
         
-        handleCollision(&movement, NULL, 0); // Handle the collision
+        handleCollision(&entity, 1, NULL, 0); // Handle the collision
 
         TraceLog(LOG_INFO, "Position: %f, %f", movement.position.x, movement.position.y);
         TraceLog(LOG_INFO, "Velocity: %f, %f", movement.velocity.x, movement.velocity.y);
@@ -97,28 +109,35 @@ int main(void)
         BeginTextureMode(target);     // Enable drawing to texture for scaling
         ClearBackground(BLANK);
 
-        for (int y = 0; y < TILEMAP_HEIGHT; y++)
-        {
-            for (int x = 0; x < TILEMAP_WIDTH; x++)
-            {
-                // Draw each tile (replace with your tile drawing logic)
-                if((x + y) % 2 == 0) DrawRectangle(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE, GRAY);
-                else DrawRectangle(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE, BLUE);
+        // Draw tilemap
+        for (int y = 0; y < TILEMAP_HEIGHT; y++) {
+            for (int x = 0; x < TILEMAP_WIDTH; x++) {
+                if((x + y) % 2 == 0) {
+                    DrawRectangle(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE, GRAY);
+                } else {
+                    DrawRectangle(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE, BLUE);
+                }
             }
         }
 
-        DrawRectangle(movement.position.x, movement.position.y, -32, -32, RED);
+        // Draw the player rectangle from top-left corner instead of bottom-right
+        DrawRectangle(movement.position.x, movement.position.y - 32, 32, 32, RED);
 
         EndTextureMode();
 
-        DrawTexturePro(target.texture, (Rectangle){0, 0, target.texture.width, -target.texture.height},
-                       (Rectangle){0, 0, WINDOW_WIDTH, WINDOW_HEIGHT}, (Vector2){0, 0}, 0.0f, WHITE);
+        // Calculate the scale factor
+        float scaleX = (float)windowWidth / (TILEMAP_WIDTH * TILE_SIZE);
+        float scaleY = (float)windowHeight / (TILEMAP_HEIGHT * TILE_SIZE);
 
-        Vector2 scaledPosition = getScaledPosition(movement.position);
-        TraceLog(LOG_INFO, "Scaled position: %f, %f", scaledPosition.x, scaledPosition.y);
-        
+        // Draw the scaled texture
+        DrawTexturePro(target.texture, 
+            (Rectangle){ 0, 0, (float)target.texture.width, -(float)target.texture.height },
+            (Rectangle){ 0, 0, (float)windowWidth, (float)windowHeight },
+            (Vector2){ 0, 0 }, 
+            0.0f, 
+            WHITE);
 
-
+        // Draw text on top of the scaled game
         DrawText("Hello, world!", 190, 200, 20, LIGHTGRAY);
 
         EndDrawing();

@@ -5,6 +5,7 @@
 #include "types/componentTypes.h"
 #include "prototypes/movementPrototype.h"
 #include "events/event.h"
+#include "events/eventDispatcher.h"
 
 void onJump(Event *context);
 void onCrouch(Event *context);

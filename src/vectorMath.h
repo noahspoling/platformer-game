@@ -8,8 +8,11 @@
 
 
 Vector2 getScaledPosition(Vector2 position) {
+    float scaleX = (float)DEFAULT_WINDOW_WIDTH / (TILEMAP_WIDTH * TILE_SIZE);
+    float scaleY = (float)DEFAULT_WINDOW_HEIGHT / (TILEMAP_HEIGHT * TILE_SIZE);
+    
     return (Vector2){
-        position.x * (WINDOW_WIDTH / (float)(TILEMAP_WIDTH * TILE_SIZE)),
-        position.y * (WINDOW_HEIGHT / (float)(TILEMAP_HEIGHT * TILE_SIZE))
+        position.x * scaleX,
+        position.y * scaleY
     };
 }

@@ -4,8 +4,8 @@
 #include "raylib.h"
 
 #include "types/componentTypes.h"
-#include "prototypes/movementPrototype.h"
+#include "prototypes/physicsEntityPrototype.h"
 
-void handleCollision(Movement *movement, Rectangle *platforms, int platformCount);
+void handleCollision(PhysicsEntity *entities, int entityCount, Rectangle *platforms, int platformCount);
 
 #endif // COLLISION_SYSTEM_H

@@ -1,4 +1,5 @@
 #include "events/event.h"
+#include "events/eventDispatcher.h"
 #include "config.h"
 #include "prototypes/movementPrototype.h"
 #include "events/listeners/inputListeners.h"
