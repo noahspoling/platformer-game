@@ -65,3 +65,11 @@ if(EMSCRIPTEN)
         LINK_FLAGS "-s USE_GLFW=3 -s ASSERTIONS=1 -s WASM=1 -s ASYNCIFY -s ALLOW_MEMORY_GROWTH=1 --shell-file ${WEB_SHELL}"
     )
 endif()
+
+# Add raygui
+add_library(raygui INTERFACE)
+target_include_directories(raygui INTERFACE lib/extern/raygui/src)
+target_compile_definitions(raygui INTERFACE RAYGUI_IMPLEMENTATION)
+
+# After your existing target_link_libraries line, add:
+target_link_libraries(${PROJECT_NAME} PRIVATE raygui)

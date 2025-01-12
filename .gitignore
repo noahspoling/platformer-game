@@ -1,9 +1,11 @@
+# Editor files
 .vscode/
+.codegpt
 
+# Build files
 build/
 build_web/*
 !build_web/Game.html
 !build_web/Game.js
 !build_web/Game.wasm
 emsdk
-.codegpt
