@@ -50,66 +50,98 @@ cmake_ninja_workdir = /home/runner/work/platformer-game/platformer-game/build_we
 build cmake_object_order_depends_target_Game: phony || cmake_object_order_depends_target_raylib
 
 build CMakeFiles/Game.dir/src/events/eventDispatcher.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/events/eventDispatcher.c || cmake_object_order_depends_target_Game
-  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
   DEP_FILE = CMakeFiles/Game.dir/src/events/eventDispatcher.c.o.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
-  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
   OBJECT_DIR = CMakeFiles/Game.dir
   OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/events
 
 build CMakeFiles/Game.dir/src/events/listeners/inputListeners.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/events/listeners/inputListeners.c || cmake_object_order_depends_target_Game
-  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
   DEP_FILE = CMakeFiles/Game.dir/src/events/listeners/inputListeners.c.o.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
-  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
   OBJECT_DIR = CMakeFiles/Game.dir
   OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/events/listeners
 
 build CMakeFiles/Game.dir/src/events/listeners/physicsListeners.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/events/listeners/physicsListeners.c || cmake_object_order_depends_target_Game
-  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
   DEP_FILE = CMakeFiles/Game.dir/src/events/listeners/physicsListeners.c.o.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
-  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
   OBJECT_DIR = CMakeFiles/Game.dir
   OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/events/listeners
 
 build CMakeFiles/Game.dir/src/input/input.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/input/input.c || cmake_object_order_depends_target_Game
-  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
   DEP_FILE = CMakeFiles/Game.dir/src/input/input.c.o.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
-  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
   OBJECT_DIR = CMakeFiles/Game.dir
   OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/input
 
 build CMakeFiles/Game.dir/src/main.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/main.c || cmake_object_order_depends_target_Game
-  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
   DEP_FILE = CMakeFiles/Game.dir/src/main.c.o.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
-  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
   OBJECT_DIR = CMakeFiles/Game.dir
   OBJECT_FILE_DIR = CMakeFiles/Game.dir/src
 
+build CMakeFiles/Game.dir/src/scenes/gameplayScene.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/scenes/gameplayScene.c || cmake_object_order_depends_target_Game
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
+  DEP_FILE = CMakeFiles/Game.dir/src/scenes/gameplayScene.c.o.d
+  FLAGS = -O3 -DNDEBUG -std=gnu99
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
+  OBJECT_DIR = CMakeFiles/Game.dir
+  OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/scenes
+
+build CMakeFiles/Game.dir/src/scenes/menuScene.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/scenes/menuScene.c || cmake_object_order_depends_target_Game
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
+  DEP_FILE = CMakeFiles/Game.dir/src/scenes/menuScene.c.o.d
+  FLAGS = -O3 -DNDEBUG -std=gnu99
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
+  OBJECT_DIR = CMakeFiles/Game.dir
+  OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/scenes
+
+build CMakeFiles/Game.dir/src/scenes/pauseScene.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/scenes/pauseScene.c || cmake_object_order_depends_target_Game
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
+  DEP_FILE = CMakeFiles/Game.dir/src/scenes/pauseScene.c.o.d
+  FLAGS = -O3 -DNDEBUG -std=gnu99
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
+  OBJECT_DIR = CMakeFiles/Game.dir
+  OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/scenes
+
+build CMakeFiles/Game.dir/src/scenes/sceneManager.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/scenes/sceneManager.c || cmake_object_order_depends_target_Game
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
+  DEP_FILE = CMakeFiles/Game.dir/src/scenes/sceneManager.c.o.d
+  FLAGS = -O3 -DNDEBUG -std=gnu99
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
+  OBJECT_DIR = CMakeFiles/Game.dir
+  OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/scenes
+
 build CMakeFiles/Game.dir/src/systems/collisionSystem.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/systems/collisionSystem.c || cmake_object_order_depends_target_Game
-  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
   DEP_FILE = CMakeFiles/Game.dir/src/systems/collisionSystem.c.o.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
-  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
   OBJECT_DIR = CMakeFiles/Game.dir
   OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/systems
 
 build CMakeFiles/Game.dir/src/tests/testInputCommands.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/tests/testInputCommands.c || cmake_object_order_depends_target_Game
-  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
   DEP_FILE = CMakeFiles/Game.dir/src/tests/testInputCommands.c.o.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
-  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
   OBJECT_DIR = CMakeFiles/Game.dir
   OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/tests
 
 build CMakeFiles/Game.dir/src/tests/tests.c.o: C_COMPILER__Game_unscanned_Release /home/runner/work/platformer-game/platformer-game/src/tests/tests.c || cmake_object_order_depends_target_Game
-  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB
+  DEFINES = -DGRAPHICS_API_OPENGL_ES2 -DPLATFORM_WEB -DRAYGUI_IMPLEMENTATION
   DEP_FILE = CMakeFiles/Game.dir/src/tests/tests.c.o.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
-  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src
+  INCLUDES = -I/home/runner/work/platformer-game/platformer-game/src -I/home/runner/work/platformer-game/platformer-game/src/include -I/home/runner/work/platformer-game/platformer-game/lib/extern/raylib/src -I/home/runner/work/platformer-game/platformer-game/lib/extern/raygui/src
   OBJECT_DIR = CMakeFiles/Game.dir
   OBJECT_FILE_DIR = CMakeFiles/Game.dir/src/tests
 
@@ -121,7 +153,7 @@ build CMakeFiles/Game.dir/src/tests/tests.c.o: C_COMPILER__Game_unscanned_Releas
 #############################################
 # Link the executable Game.html
 
-build Game.html: C_EXECUTABLE_LINKER__Game_Release CMakeFiles/Game.dir/src/events/eventDispatcher.c.o CMakeFiles/Game.dir/src/events/listeners/inputListeners.c.o CMakeFiles/Game.dir/src/events/listeners/physicsListeners.c.o CMakeFiles/Game.dir/src/input/input.c.o CMakeFiles/Game.dir/src/main.c.o CMakeFiles/Game.dir/src/systems/collisionSystem.c.o CMakeFiles/Game.dir/src/tests/testInputCommands.c.o CMakeFiles/Game.dir/src/tests/tests.c.o | lib/extern/raylib/raylib/libraylib.a || lib/extern/raylib/raylib/libraylib.a
+build Game.html: C_EXECUTABLE_LINKER__Game_Release CMakeFiles/Game.dir/src/events/eventDispatcher.c.o CMakeFiles/Game.dir/src/events/listeners/inputListeners.c.o CMakeFiles/Game.dir/src/events/listeners/physicsListeners.c.o CMakeFiles/Game.dir/src/input/input.c.o CMakeFiles/Game.dir/src/main.c.o CMakeFiles/Game.dir/src/scenes/gameplayScene.c.o CMakeFiles/Game.dir/src/scenes/menuScene.c.o CMakeFiles/Game.dir/src/scenes/pauseScene.c.o CMakeFiles/Game.dir/src/scenes/sceneManager.c.o CMakeFiles/Game.dir/src/systems/collisionSystem.c.o CMakeFiles/Game.dir/src/tests/testInputCommands.c.o CMakeFiles/Game.dir/src/tests/tests.c.o | lib/extern/raylib/raylib/libraylib.a || lib/extern/raylib/raylib/libraylib.a
   FLAGS = -O3 -DNDEBUG
   LINK_FLAGS = -s USE_GLFW=3 -s ASSERTIONS=1 -s WASM=1 -s ASYNCIFY -s ALLOW_MEMORY_GROWTH=1 --shell-file /home/runner/work/platformer-game/platformer-game/shell.html  -sUSE_GLFW=3
   LINK_LIBRARIES = lib/extern/raylib/raylib/libraylib.a
