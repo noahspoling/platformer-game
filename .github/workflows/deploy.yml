@@ -35,7 +35,13 @@ jobs:
         run: |
           mkdir -p build_web
           cd build_web
-          emcmake cmake .. -G Ninja
+          emcmake cmake .. -G Ninja \
+            -DPLATFORM=Web \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DBUILD_EXAMPLES=OFF \
+            -DUSE_WAYLAND=OFF \
+            -DUSE_X11=OFF \
+            -DOPENGL_VERSION="ES 2.0"
           ninja
 
       - name: Deploy to GitHub Pages
