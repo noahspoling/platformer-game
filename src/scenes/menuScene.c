@@ -11,5 +11,8 @@ void drawMenuScene(void) {
     if (GuiButton((Rectangle){ 190, 200, 120, 40 }, "Start Game")) {
         changeScene(SCENE_GAMEPLAY);
     }
+    if (GuiButton((Rectangle){ 190, 250, 120, 40 }, "Map Editor")) {
+        changeScene(SCENE_MAP_EDITOR);
+    }
 }
 void unloadMenuScene(void) {} 

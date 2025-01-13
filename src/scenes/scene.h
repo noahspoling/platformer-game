@@ -16,6 +16,7 @@
 typedef enum {
     SCENE_NONE = -1, // So it doesn't fuck up the count
     SCENE_MENU,
+    SCENE_MAP_EDITOR,
     SCENE_GAMEPLAY,
     SCENE_PAUSE,
     SCENE_COUNT
