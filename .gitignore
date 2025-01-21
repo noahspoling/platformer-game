@@ -9,3 +9,9 @@ build_web/*
 !build_web/Game.js
 !build_web/Game.wasm
 emsdk
+
+# Assets (will be stored somewhere else)
+resources/
+
+# Local
+docs/local/

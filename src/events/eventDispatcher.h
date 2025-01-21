@@ -23,5 +23,6 @@ EventDispatcher *getEventDispatcher();
 void initEventDispatcher(EventDispatcher *eventDispatcher);
 void registerListener(EventType eventType, EventCallback callback);
 void dispatchEvent(Event *event);
+void unloadEventDispatcher();
 
 #endif // EVENT_DISPATCHER_H

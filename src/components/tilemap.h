@@ -2,11 +2,14 @@
 #define TILEMAP_H
 
 #include "raylib.h"
+
 #include "config.h"
+
+#include "tile.h"
 
 
 typedef struct {
-    int tilemap[TILEMAP_WIDTH][TILEMAP_HEIGHT];
+    Tile tilemap[TILEMAP_WIDTH][TILEMAP_HEIGHT];
     int width;
     int height;
     int tileSize;

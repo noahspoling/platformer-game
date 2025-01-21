@@ -1,5 +1,7 @@
 #include "mapEditorScene.h"
 
+MapEditorState editorState;
+
 typedef enum {
     MAP_EDIT_MAP_TILE_MODE,
     
@@ -9,7 +11,12 @@ typedef enum {
 
 
 void initMapEditorScene(void) {
-    // Initialize map editor resources
+    editorState.currentEditMode = MAP_EDITOR_LEVEL;
+    editorState.camera = (Camera2D) { 0 };
+    editorState.camera.target = (Vector2) { 0 };
+    editorState.camera.offset = (Vector2) { 0 };
+    editorState.camera.rotation = 0.0f;
+    editorState.camera.zoom = 1.0f;
 }
 
 void updateMapEditorScene(void) {

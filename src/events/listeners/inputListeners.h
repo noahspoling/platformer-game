@@ -13,5 +13,6 @@ void onMoveLeft(Event *context);
 void onMoveRight(Event *context);
 
 void registerInputListeners();
+void unloadInputListeners();
 
 #endif // INPUT_LISTENERS_H

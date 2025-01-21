@@ -7,10 +7,11 @@
 typedef enum {
     TILE_EMPTY,
     TILE_BLOCK,
+    TILE_COUNT
 } TileType;
 
-// typedef struct {
-//     int 
-// }
+typedef struct {
+    TileType type;
+} Tile;
 
 #endif // TILE_H

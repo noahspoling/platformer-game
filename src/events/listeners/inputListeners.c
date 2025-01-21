@@ -40,3 +40,7 @@ void registerInputListeners() {
     registerListener(EVENT_MOVE_LEFT, onMoveLeft);
     registerListener(EVENT_MOVE_RIGHT, onMoveRight);
 }
+
+void unloadInputListeners() {
+    TraceLog(LOG_INFO, "Unloading input listeners");
+}

@@ -4,8 +4,13 @@
 #include "events/listeners/inputListeners.h"
 #include "scenes/sceneManager.h"
 
+#ifndef PLATFORM_WEB
+#include "util/glfw_wrapper.h"  // Only include for desktop builds
+#endif
+
 int main(void) {
     InitWindow(DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT, "Game");
+    SetExitKey(KEY_F4);
     
     initEventDispatcher(getEventDispatcher());
     registerInputListeners();
@@ -13,7 +18,7 @@ int main(void) {
 
     SetTargetFPS(60);
 
-    while (!WindowShouldClose()) {
+    while (!WindowShouldClose() && !shouldExitGame()) {
         updateCurrentScene();
 
         BeginDrawing();
@@ -23,6 +28,8 @@ int main(void) {
     }
 
     unloadCurrentScene();
+    unloadInputListeners();
+    unloadEventDispatcher();
     CloseWindow();
     return 0;
 }

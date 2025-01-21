@@ -39,3 +39,8 @@ void dispatchEvent(Event *event) {
         list->callback[i](event);
     }
 }
+
+void unloadEventDispatcher() {
+    free(dispatcher_instance);
+    dispatcher_instance = NULL;
+}

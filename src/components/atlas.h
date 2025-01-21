@@ -9,8 +9,12 @@ typedef struct {
     int columns;
 } Atlas;
 
-Atlas* CreateAtlas(char* filename, int rows, int columns);
-Rectangle GetAtlasSpriteRect(Atlas *atlas, int column, int row);
-void DestroyAtlas(Atlas* atlas);
+static inline int GetAtlasTileWidth(Atlas atlas) {
+    return atlas.texture.width / atlas.columns;
+}
+
+static inline int GetAtlasTileHeight(Atlas atlas) {
+    return atlas.texture.height / atlas.rows;
+}
 
 #endif // ATLAS_H
