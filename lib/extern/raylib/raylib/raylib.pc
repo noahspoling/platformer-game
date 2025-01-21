@@ -1,4 +1,4 @@
-prefix=/home/runner/work/platformer-game/platformer-game/emsdk-cache/emsdk-main/upstream/emscripten/cache/sysroot
+prefix=/home/runner/work/_temp/bce6fb9b-19c8-4731-b465-470fd4cd8c8d/emsdk-main/upstream/emscripten/cache/sysroot
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
